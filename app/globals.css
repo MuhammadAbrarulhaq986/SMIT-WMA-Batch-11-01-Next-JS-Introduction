@@ -2,26 +2,99 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.btn {
+  /* Set the background color and text color */
+  background-color: #4caf50;
+  color: #fff;
+
+  /* Add some padding and border radius */
+  padding: 12px 24px;
+  border-radius: 5px;
+
+  /* Set the font size and font family */
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+
+  /* Add a border and cursor style */
+  border: none;
+  cursor: pointer;
+
+  /* Add a hover effect */
+  transition: background-color 0.3s;
+
+  /* Add a box shadow */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Add a text shadow */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+
+  /* Add a font weight */
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn:active {
+  background-color: #2f6d31;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4caf50;
+}
+
+/* **************************************************** */
+.card {
+  /* Add some basic card styles */
+  background-color: #fff;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h1 {
+  /* Style the card title */
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card p {
+  /* Style the card description */
+  font-size: 16px;
+  color: #666;
+}
+
+.card-btn {
+  /* Add the button styles */
+  background-color: #4caf50;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.card-btn:hover {
+  background-color: #3e8e41;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.card-btn:active {
+  background-color: #2f6d31;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #4caf50;
 }
